@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidney Donation Questions</title>
+    <style>
+        body{
+            background-image: url(kidney2.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 600px;
+        }
+        .custom-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .custom-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kidney Donation Questions</h1>
+    <p>Thank you for considering kidney donation. Please answer the following questions:</p>
+
+    <form action="submit_kidney_data.php" method="post">
+        <label for="age">1. Age:</label><br>
+        <input type="radio" id="age_under18" name="age" value="Under 18">
+        <label for="age_under18">Under 18</label><br>
+        <input type="radio" id="age_18-30" name="age" value="18-30">
+        <label for="age_18-30">18-30</label><br>
+        <input type="radio" id="age_31-45" name="age" value="31-45">
+        <label for="age_31-45">31-45</label><br>
+        <input type="radio" id="age_46-60" name="age" value="46-60">
+        <label for="age_46-60">46-60</label><br>
+        <input type="radio" id="age_over60" name="age" value="Over 60">
+        <label for="age_over60">Over 60</label><br>
+        
+        <label for="health_condition">2. Current Health Condition:</label><br>
+        <input type="radio" id="health_excellent" name="health_condition" value="Excellent">
+        <label for="health_excellent">Excellent</label><br>
+        <input type="radio" id="health_good" name="health_condition" value="Good">
+        <label for="health_good">Good</label><br>
+        <input type="radio" id="health_fair" name="health_condition" value="Fair">
+        <label for="health_fair">Fair</label><br>
+        <input type="radio" id="health_poor" name="health_condition" value="Poor">
+        <label for="health_poor">Poor</label><br>
+
+        
+        <label for="medical_history">3. Medical History:</label><br>
+        <input type="radio" id="medical_none" name="medical_history" value="None">
+        <label for="medical_none">None</label><br>
+        <input type="radio" id="medical_kidney_disease" name="medical_history" value="Kidney Disease">
+        <label for="medical_kidney_disease">Kidney Disease</label><br>
+        <input type="radio" id="medical_hypertension" name="medical_history" value="Hypertension">
+        <label for="medical_hypertension">Hypertension</label><br>
+        <!-- Add more medical history options as needed -->
+        
+        <label for="medications">4. Current Medications (if any):</label><br>
+        <input type="radio" id="medications_none" name="medications" value="None">
+        <label for="medications_none">None</label><br>
+        <input type="radio" id="medications_taken" name="medications" value="Taking Medications">
+        <label for="medications_taken">Taking Medications (please list):</label>
+        <input type="text" id="medications_list" name="medications_list"><br>
+
+        <label for="allergies">5. Allergies (if any):</label><br>
+        <input type="radio" id="allergies_none" name="allergies" value="None">
+        <label for="allergies_none">None</label><br>
+        <input type="radio" id="allergies_present" name="allergies" value="Allergies Present">
+        <label for="allergies_present">Allergies Present (please specify):</label>
+        <input type="text" id="allergies_details" name="allergies_details"><br>
+
+        <label for="cancer">6. Have you ever been diagnosed with any type of cancer?</label><br>
+        <input type="radio" id="cancer_yes" name="cancer" value="Yes">
+        <label for="cancer_yes">Yes (please specify type and date of diagnosis):</label>
+        <input type="text" id="cancer_details" name="cancer_details"><br>
+        <input type="radio" id="cancer_no" name="cancer" value="No">
+        <label for="cancer_no">No</label><br>
+        <button type="button" id="myButton" class="custom-button"><a href="legal.html">TERMS AND CONDITIONS</a></button>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

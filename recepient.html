@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: 'Monsterrat', 'sans-serif';
+            background-color: #578caf;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+ 
+        h1 {
+            text-align: center;
+        }   
+
+        label, input, select, button {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .file-upload {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recepient Registration</h1>
+        <form action="#" method="post" >
+        
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="contact_no">Contact Number:</label>
+            <input type="tel" name="contact_no" id="contact_no" required>
+
+                <label for="blood_group">Blood Group:</label>
+                <input type="text" name="blood_group" id="blood_group" required>
+
+                <label for="organ_needed">Organ Needed:</label>
+                <input type="text" name="organ_needed" id="organ_needed" required>
+
+                <label for="hospital">Concerned Hospital:</label>
+                <input type="text" name="hospital" id="hospital" required>
+
+                <label for="medical_reports">Medical Reports (PDF):</label>
+                <input type="file" name="medical_reports" id="medical_reports" accept=".pdf" required class="file-upload">
+
+            <button type="submit"><a href="#">Sign Up</a></button>
+        </form>
+
+        <h2>Already have an account? <a href="signin.html">Sign In</a></h2>
+    </div>
+
+   

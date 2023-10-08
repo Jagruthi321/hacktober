@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organs That Can Be Donated</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7eff0;
+            background-image: url("");
+        }
+
+        header {
+            background-image: url("navback.JPG");
+            background-size: cover;
+    background-repeat: no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #bcdfeb;
+    background-image: url("back3.jpg");
+    background-size: cover;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .organ-section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+        }
+        .organ-section {
+            margin-bottom: 20px;
+        }
+
+        .organ-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .organ-button:hover {
+            background-color: #0056b3;
+        }
+
+        .organ-info {
+            display: none;
+        }
+        .blood-section {
+            margin-bottom: 20px;
+        }
+
+        .blood-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .blood-button:hover {
+            background-color: #0056b3;
+        }
+
+        .blood-info {
+            display: none;
+        }
+        .kidney-section {
+            margin-bottom: 20px;
+        }
+
+        .kidney-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .kidney-button:hover {
+            background-color: #0056b3;
+        }
+
+        .kidney-info {
+            display: none;
+        }
+        .liver-section {
+            margin-bottom: 20px;
+        }
+
+        .liver-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .liver-button:hover {
+            background-color: #0056b3;
+        }
+
+        .liver-info {
+            display: none;
+        }
+        .lungs-section {
+            margin-bottom: 20px;
+        }
+
+        .lungs-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .lungs-button:hover {
+            background-color: #0056b3;
+        }
+
+        .lungs-info {
+            display: none;
+        }
+        .pancreas-section {
+            margin-bottom: 20px;
+        }
+
+        .pancreas-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .pancreas-button:hover {
+            background-color: #0056b3;
+        }
+
+        .pancreas-info {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Organs That Can Be Donated</h1>
+    </header>
+    <main>
+        <section class="organ-section">
+            <h2>Heart</h2>
+            <button class="organ-button" onclick="toggleInfo('heart')">Learn More</button>
+            <div id="heart-info" class="organ-info">
+                <p>The heart is one of the most vital organs that can be donated. It can be transplanted to save a person's life.</p>
+                <p>Heart transplantation is a complex procedure that requires a compatible donor and recipient.</p>
+                <p>Patients with heart failure often benefit from heart transplants to improve their quality of life.</p>
+                
+            </div>
+        </section>
+        <section class="blood-section">
+            <section class="blood-section">
+            <h2>Blood</h2>
+            <button class="blood-button" onclick="toggleInfo('blood')">Learn More</button>
+            <div id="blood-info" class="blood-info">
+                <p>Blood donation involves giving a portion of your blood to be used for various medical purposes.</p>
+                <p>It's essential for surgeries, emergencies, and treating various medical conditions.</p>
+                <p>Blood donors are screened for eligibility, and the process is safe and straightforward.</p>
+            </div>
+            </section>
+            <section class="kidney-section">
+                <section class="kidney-section">
+                <h2>Kidney</h2>
+                <button class="kidney-button" onclick="toggleInfo('kidney')">Learn More</button>
+                <div id="kidney-info" class="kidney-info">
+                    <p>Of all organs in the human body, the demand for kidneys is the highest, and kidneys are the most frequently donated organs.</p>
+                    <p>Kidneys are responsible for filtering waste and excess water from the blood and balancing the body’s fluids. </p>
+                    <p>Those on dialysis due to suffering from high blood pressure, diabetes or cystic kidney disease may be candidates for a kidney transplant.</p>
+                </div>
+                </section>
+                <section class="liver-section">
+                    <section class="liver-section">
+                    <h2>Liver</h2>
+                    <button class="liver-button" onclick="toggleInfo('liver')">Learn More</button>
+                    <div id="liver-info" class="liver-info">
+                        <p>Because of the vast number of functions, donating a liver can save people from chronic liver infections.</p>
+                        <p>The liver has more than 500 known functions in the human body</p>
+                        <p>A donated liver can sometimes be split between two recipients, which means one donor could potentially save the lives of two people. </p>
+                    </div>
+                    </section>
+                    <section class="lungs-section">
+                        <section class="lungs-section">
+                        <h2>Lungs</h2>
+                        <button class="lungs-button" onclick="toggleInfo('lungs')">Learn More</button>
+                        <div id="lungs-info" class="lungs-info">
+                            <p>When you breathe in your lungs fill with air, and oxygen from that air moves into your blood, allowing it to be carried to all parts of the body.</p>
+                            <p>When you breathe out, a waste gas called carbon dioxide is removed by the lungs. This exchange of gases is vital for survival.</p>
+                            <p>If you choose to donate your lungs when you die you could save someone's life.</p>
+                        </div>
+                        </section>
+                        <section class="pancreas-section">
+                            <section class="pancreas-section">
+                            <h2>Pancreas</h2>
+                            <button class="pancreas-button" onclick="toggleInfo('pancreas')">Learn More</button>
+                            <div id="pancreas-info" class="pancreas-info">
+                                <p>At present, the majority of pancreas transplants are performed on people who have Type 1 Diabetes which can also cause kidney failure.</p>
+                                <p>The pancreas is an organ of the digestive system and endocrine system of vertebrates.</p>
+                                <p>The pancreas is a mixed or heterocrine gland, i.e., it has both an endocrine and a digestive exocrine function.</p>
+                            </div>
+                            </section>
+    </main>
+    <footer>
+          Organs That Can Be Donated
+    </footer>
+    <script>
+        function toggleInfo(organ) {
+            var infoElement = document.getElementById(organ + '-info');
+            if (infoElement.style.display === 'none' || infoElement.style.display === '') {
+                infoElement.style.display = 'block';
+            } else {
+                infoElement.style.display = 'none';
+            }
+        }
+        function toggleInfo(blood) {
+            var infoElement = document.getElementById(blood + '-info');
+            if (infoElement.style.display === 'none' || infoElement.style.display === '') {
+                infoElement.style.display = 'block';
+            } else {
+                infoElement.style.display = 'none';
+            }
+        }
+        function toggleInfo(kidney) {
+            var infoElement = document.getElementById(kidney + '-info');
+            if (infoElement.style.display === 'none' || infoElement.style.display === '') {
+                infoElement.style.display = 'block';
+            } else {
+                infoElement.style.display = 'none';
+            }
+        }
+        function toggleInfo(liver) {
+            var infoElement = document.getElementById(liver + '-info');
+            if (infoElement.style.display === 'none' || infoElement.style.display === '') {
+                infoElement.style.display = 'block';
+            } else {
+                infoElement.style.display = 'none';
+            }
+        }
+        function toggleInfo(lungs) {
+            var infoElement = document.getElementById(lungs + '-info');
+            if (infoElement.style.display === 'none' || infoElement.style.display === '') {
+                infoElement.style.display = 'block';
+            } else {
+                infoElement.style.display = 'none';
+            }
+        }
+        function toggleInfo(pancreas) {
+            var infoElement = document.getElementById(pancreas + '-info');
+            if (infoElement.style.display === 'none' || infoElement.style.display === '') {
+                infoElement.style.display = 'block';
+            } else {
+                infoElement.style.display = 'none';
+            }
+        }
+        
+    </script>
+</body>
+</html>

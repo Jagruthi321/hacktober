@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Donation</title>
+    <style>
+        /* Reset some default styles for better consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+
+        }
+
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2cdd1;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            
+            background-image: url("navback.JPG");
+            background-size: cover;
+    background-repeat: no-repeat; 
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 20px;
+        }
+
+        .navbar a {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #e8eff1;
+            color: black;
+        }
+
+        /* Dropdown menu styles */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            text-align: center;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #b6c0c1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+       
+        .content {
+            padding: 20px;
+        }
+
+        .quote-section {
+            background-color: #cad2dc;
+            background-image: url("back.jpg");
+            background-size: cover;
+    background-repeat: no-repeat; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        .quote {
+            font-size: 34px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-family:ui-rounded;
+        }
+
+        .quote-description {
+            font-size: 16px;
+            color: #555;
+        }
+        .quote-description #boldt{
+            font-style: bold;
+            font-size: 20px;
+            font-weight:20px;
+        }
+
+        .quote-image {
+            max-width: 30%;
+            height: auto;
+            margin-right:100px;
+        }
+
+        .numbers-section {
+    background-color: #bcdfeb;
+    background-image: url("back3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.number-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.number-description {
+    font-size: 16px;
+    color: #555;
+    justify-content: space-between;
+}
+
+.stories-section {
+    background-image:url("back2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    text-align:justify;
+    margin: 20px 0;
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color:#131212
+}
+
+
+
+
+.story {
+    text-align:center;
+    max-width: 200px; 
+}
+
+.story-image {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+
+}
+
+.story-name a {
+    font-size: 16px;
+    color: #131212;
+    font-weight: 200;
+    text-decoration: none;
+    font-style: bold;
+    justify-content: center;
+}
+.story-name a:hover{
+    font-size: 16px;
+    color: rgb(66 93 142);
+    font-weight: 200;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">About Organ Donation &#9660;</button>
+        <div class="dropdown-content">
+            <a href="who can donate.html" target="_blank">Who Can Donate</a>
+            <a href="whatcandonate.html" target="_blank">What Can You Donate</a>
+            <a href="statistics.html" target="_blank">Statistics</a>
+        </div>
+    </div>
+    <a href="legal.html" target="_blank">Legal Authentication</a>
+    <a href="awareness.html" target="_blank">Awareness</a>
+    <div class="dropdown" target="_blank"> 
+        <button class="dropbtn">Signup &#9660;</button>
+        <div class="dropdown-content">
+            <a href="donor registration.html" target="_blank">As Donor</a>
+            <a href="recepient.html" target="_blank">As Recipient</a>
+            <a href="#hospital" target="_blank">Hospital</a>
+        </div>
+    </div>
+    <a href="#login">Login</a>
+</div>
+
+<div class="content">
+    
+    <div class="quote-section">
+        <div>
+            <p class="quote">"The measure of life is not its duration but its donation"</p>
+            <br>
+            <br>
+            <br>
+            <p class="quote-description">Over 100,000 lives hang in the balance, waiting for a lifesaving transplant. The key to their hope lies in the generosity of organ donors. Your selfless act can bridge the gap between despair and renewed life.
+                <br>Be the hero they're waiting for—become an organ donor today."</p>
+        </div>
+        <img class="quote-image" src="orgdon.png" alt="Organ Donation Image">
+    </div>
+
+    <div class="numbers-section">
+        <div class="number-container">
+            <div class="number">9</div>
+            <div class="number-description">In every 9 minutes,another person is added to the waiting list</div>
+        </div>
+        <div class="number-container">
+            <div class="number">17</div>
+            <div class="number-description">17 people die each day while waiting for organ transplant.</div>
+        </div>
+        <div class="number-container">
+            <div class="number">75</div>
+            <div class="number-description">One organ donor can save and heal more than 75 lives.</div>
+        </div>
+    </div>
+    
+    
+    <div class="stories-section">
+        
+        <div class="story">
+            <img class="story-image" src="kelly.jpg" alt="Story 1">
+            <p class="story-name"><a href="kellen.html" target="blank">Kelly Donor family</a></p>
+        </div>
+        <div class="story">
+            <img class="story-image" src="chiris.jpg" alt="Story 2">
+            <p class="story-name"><a href="chiris.html" target="blank">Chris and Caitlyn</a></p>
+        </div>
+        <div class="story">
+            <img class="story-image" src="london.jpg" alt="Story 3">
+            <p class="story-name"><a href="london.html" target="blank">London Story</a></p>
+        </div>
+    </div>
+    
+    </div>
+    
+</div>
+
+</body>
+</html>

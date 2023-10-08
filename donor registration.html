@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Registration</title>
+    <style>
+    /* Reset default styles */
+body, h1, p, label, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+   color:#fff;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #131414;
+    padding: 50px;
+   
+    background-color: #eef3f4b6;
+
+}
+
+/* Container styles */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styles */
+h1 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Label styles */
+label {
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    color:#100909;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Select styles */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('arrow.png') no-repeat right;
+    background-size: 20px;
+}
+
+/* Textarea styles */
+textarea {
+    resize: vertical;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button styles */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+nav{
+    color:#fff;
+    padding:20px;
+    border-radius: 10px;
+}
+body{
+    color:#fff;
+    background-image:url(organ2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#blood_type{
+    color:#19c143;
+}
+</style>
+<script>
+    function redirectToDonation() {
+        var selectedType = document.querySelector('input[name="donation_type"]:checked');
+
+        if (selectedType) {
+            var type = selectedType.value;
+
+            // Redirect to the corresponding donation webpage
+            if (type === "living") {
+                window.location.href = "living_donation.html"; // Replace with your living donation page URL
+            } else if (type === "postmortem") {
+                window.location.href = "postmortem_donation.html"; // Replace with your post-mortem donation page URL
+            }
+        }
+    }
+</script>
+</head>
+<body>
+    <nav>
+    <h1>Donor Registration</h1>
+    </nav>
+    <form action="confirmation_page.html" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="blood_type">Blood Type:</label>
+        <select id="blood_type" name="blood_type" required>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select><br><br>
+
+        <label>Donation Options:</label><br>
+        <input type="checkbox" id="organs" name="donation_option[]" value="Organs">
+        <label for="organs">Organs</label><br>
+
+        <input type="checkbox" id="blood" name="donation_option[]" value="Blood">
+        <label for="blood">Blood</label><br>
+
+        <input type="checkbox" id="platelets" name="donation_option[]" value="Platelets">
+        <label for="platelets">Platelets</label><br><br>
+        <p>Please select the type of organ donation:</p>
+    
+        <!-- Option to select Living Organ Donation -->
+        <label for="living_donation">
+            <input type="radio" id="living_donation" name="donation_type" value="living">
+            Living Organ Donation
+        </label><br>
+    
+        <!-- Option to select Post-Mortem Organ Donation -->
+        <label for="postmortem_donation">
+            <input type="radio" id="postmortem_donation" name="donation_type" value="postmortem">
+            Post-Mortem Organ Donation
+        </label><br>
+        
+         <!-- Button to proceed to the selected type of donation -->
+         <button type="submit" onclick="redirectToDonation()">Proceed</button>
+
+        
+        <!-- <input type="submit" value="Confirm Registration">-->
+    </form>
+</body>
+</html>

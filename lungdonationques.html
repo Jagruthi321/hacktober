@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lung Donation Questions</title>
+    <style>
+        body {
+            background-image: url(''); 
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        
+        form {
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+        }
+
+        label {
+            display: inline-block; 
+            font-weight: bold;
+            margin-top: 10px;
+            margin-right: 10px; 
+            color: #555; 
+        }
+
+        
+        input[type="radio"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .ques {
+            margin-top: 20px;
+        }
+
+        form {
+            background-image: url('form-background-image.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+       fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        fieldset, label {
+            border-color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lung Donation Questions</h1>
+    <p>Thank you for considering lung donation. Please answer the following questions:</p>
+
+    <form action="submit_lung_data.php" method="post">
+        <fieldset>
+            <legend>1. Age:</legend>
+            <input type="radio" id="age_under18" name="age" value="Under 18">
+            <label for="age_under18">Under 18</label>
+            <input type="radio" id="age_18-30" name="age" value="18-30">
+            <label for="age_18-30">18-30</label>
+            <input type="radio" id="age_30-60" name="age" value="30-60">
+            <label for="age_30-60">30-60</label>
+            <input type="radio" id="age_above60" name="age" value="Above 60">
+            <label for="age_above60">Above 60</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Current Health Condition:</legend>
+            <input type="radio" id="health_excellent" name="health_condition" value="Excellent">
+            <label for="health_excellent">Excellent</label>
+            <input type="radio" id="health_good" name="health_condition" value="Good">
+            <label for="health_good">Good</label>
+            <input type="radio" id="health_fair" name="health_condition" value="Fair">
+            <label for="health_fair">Fair</label>
+            <input type="radio" id="health_poor" name="health_condition" value="Poor">
+            <label for="health_poor">Poor</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Medical History:</legend>
+            <input type="radio" id="medical_none" name="medical_history" value="None">
+            <label for="medical_none">None</label>
+            <input type="radio" id="medical_lung_disease" name="medical_history" value="Lung Disease">
+            <label for="medical_lung_disease">Lung Disease</label>
+            <input type="radio" id="medical_copd" name="medical_history" value="COPD">
+            <label for="medical_copd">Chronic Obstructive Pulmonary Disease (COPD)</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>4. Current Medications (if any):</legend>
+            <input type="radio" id="medications_none" name="medications" value="None">
+            <label for="medications_none">None</label>
+            <input type="radio" id="medications_taken" name="medications" value="Taking Medications">
+            <label for="medications_taken">Taking Medications (please list):</label>
+            <input type="text" id="medications_list" name="medications_list">
+        </fieldset>
+
+        <fieldset>
+            <legend>5. Allergies (if any):</legend>
+            <input type="radio" id="allergies_none" name="allergies" value="None">
+            <label for="allergies_none">None</label>
+            <input type="radio" id="allergies_present" name="allergies" value="Allergies Present">
+            <label for="allergies_present">Allergies Present (please specify):</label>
+            <input type="text" id="allergies_details" name="allergies_details">
+        </fieldset>
+
+        <fieldset>
+            <legend>6. Have you ever been diagnosed with any type of cancer?</legend>
+            <input type="radio" id="cancer_yes" name="cancer" value="Yes">
+            <label for="cancer_yes">Yes (please specify type and date of diagnosis):</label>
+            <input type="text" id="cancer_details" name="cancer_details">
+            <input type="radio" id="cancer_no" name="cancer" value="No">
+            <label for="cancer_no">No</label>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

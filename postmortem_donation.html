@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Mortem Organ Donation</title>
+</head>
+<body>
+    <h1>Post-Mortem Organ Donation</h1>
+    <p>Thank you for considering Post-Mortem Organ Donation. Please select the organ type you wish to donate:</p>
+
+    <!--Post-mortem Organ Donation Questionnaire -->
+    <form id="organSelectionForm">
+        <label for="name">1. Your Full Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="age">2. Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+        <label for="health_condition">4. Current Health Condition:</label><br>
+        <input type="radio" id="health_excellent" name="health_condition" value="Excellent">
+        <label for="health_excellent">Excellent</label><br>
+        <input type="radio" id="health_good" name="health_condition" value="Good">
+        <label for="health_good">Good</label><br>
+        <!-- Include more health condition options as needed -->
+
+        <label for="medical_history">5. Medical History (if any):</label><br>
+        <textarea id="medical_history" name="medical_history"></textarea><br>
+
+        <label for="medications">6. Current Medications (if any):</label><br>
+        <textarea id="medications" name="medications"></textarea><br>
+
+        <label for="allergies">7. Allergies (if any):</label><br>
+        <textarea id="allergies" name="allergies"></textarea><br>
+
+        <label for="organ_type">Organ Type You Wish to Donate:</label><br>
+        <select id="organ_type" name="organ_type">
+            <option value="Kidney">Kidney</option>
+            <option value="Liver">Liver</option>
+            <option value="Heart">Heart</option>
+            <option value="Lung">Lung</option>
+            <!-- Add more organ options as needed -->
+        </select><br>
+
+        <input type="button" value="Next" onclick="redirectToPage()">
+    </form>
+
+    <script>
+        function redirectToPage() {
+            var selectedOrgan = document.getElementById("organ_type").value;
+            
+            // Define URLs for corresponding pages
+            var kidneyPage = "kidneydonation.html";
+            var liverPage = "liver.html";
+            var heartPage = "heartdonation.html";
+            var lungPage = "lungdonation.html";
+            
+            // Redirect based on the selected organ
+            switch (selectedOrgan) {
+                case "Kidney":
+                    window.location.href = kidneyPage;
+                    break;
+                case "Liver":
+                    window.location.href = liverPage;
+                    break;
+                case "Heart":
+                    window.location.href = heartPage;
+                    break;
+                case "Lung":
+                    window.location.href = lungPage;
+                    break;
+                default:
+                    // Handle default behavior or error here
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

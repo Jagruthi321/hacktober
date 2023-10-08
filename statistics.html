@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Donation Statistics</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7eff0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("navback.JPG");
+            background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #bcdfeb;
+    background-image: url("back3.jpg");
+    background-size: cover;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.toggle-button {
+    width: 20px;
+    height: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+    </style>
+    </head>
+<body>
+    <header>
+        <h1>Organ Donation Statistics</h1>
+    </header>
+    <main>
+        <section class="statistics">
+            <div class="chart-container">
+                <canvas id="waitingListChart"></canvas>
+            </div>
+            <p>There are more than 100,000 people on the transplant waiting list.</p>
+        </section>
+        <section class="statistics">
+            <div class="chart-container">
+                <canvas id="donorCountChart"></canvas>
+            </div>
+            <p>From 6,916 donors in 2014, the count increased to about 16,041 in 2022.</p>
+        </section>
+        <section class="statistics">
+            <div class="chart-container">
+                <canvas id="transplantsChart"></canvas>
+            </div>
+            <p>7258 people are waiting for a transplant.</p>
+            <p>1892 people have received a transplant since April 2023.</p>
+        </section>
+    </main>
+    <footer>
+         Organ Donation Statistics
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
